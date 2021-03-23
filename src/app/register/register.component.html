@@ -1,0 +1,49 @@
+<mat-card class="register-card">
+    <mat-card-title> 
+<div class="d-flex justify-content-between">
+    <h3>Register New User</h3>
+</div>
+</mat-card-title>  
+<mat-card-content>
+<div style="overflow: auto; height:450px;width: 60%;">
+    <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off" style="width:fit-content; height:fit-content">
+
+        <div class="m-3 input-group">
+            <div class="input-group-text">
+                <span class="input-group-text">User Name</span>
+            </div>
+            <input required minlength="2" type="text" class="form-control" name="username" #username="ngModel"
+                [(ngModel)]="regServe.formData.username">
+        </div>
+        <div class="text-left- text-danger" *ngIf="username.invalid">
+            Please Enter Username
+        </div>
+
+        <div class="m-3 input-group">
+            <div class="input-group-text">
+                <span class="input-group-text">Password</span>
+            </div>
+            <input required minlength="2" type="password" class="form-control" name="password" #password="ngModel"
+                [(ngModel)]="regServe.formData.password">
+        </div>
+        <div class="text-left- text-danger" *ngIf="password.invalid">
+            Please Enter password.
+        </div>
+
+        <div class="m-3 input-group">
+            <div class="input-group-text">
+                <span class="input-group-text">Role of User</span>
+            </div>
+            <input required minlength="2" type="text" class="form-control" name="role" #role="ngModel"
+                [(ngModel)]="regServe.formData.role">
+        </div>
+        <div class="text-left- text-danger" *ngIf="role.invalid">
+            Please Enter role of User.
+        </div>
+
+
+        <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Register</button>
+    </form>
+</div>
+</mat-card-content>
+</mat-card>

@@ -1,0 +1,37 @@
+<div class="loginform" >
+<mat-card class="register-card" style="background-color: bisque; width: 60%;" > 
+    <mat-card-title>
+        <div class="d-flex justify-content-between">
+            <h2 style="color: blue; text-align: center;">Login</h2>
+        </div>
+    </mat-card-title>
+    <mat-card-content>
+        <div style="height:250px;width: 550px;">
+            <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+
+                <div class="m-3 input-group">
+                    <div class="input-group-text">
+                        <span class="input-group-text" style= "background:darkorchid; color: goldenrod;" >User Name</span>
+                    </div>
+                    <input required minlength="2" type="text" class="form-control" name="username" #username="ngModel"
+                        [(ngModel)]="loginServe.formData.username">
+                </div>
+
+       
+
+        <div class="m-3 input-group">
+            <div class="input-group-text">
+                <span class="input-group-text" style="background:darkorchid; color: goldenrod" >Password</span>
+            </div>
+            <input required minlength="2" type="password" class="form-control" name="password" #password="ngModel"
+                [(ngModel)]="loginServe.formData.password">
+        </div>
+
+
+        <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Login</button>
+        <br> <label style="font-weight: bolder; color: red;">{{ msg }}</label>
+        </form>
+    </div>
+    </mat-card-content>    
+</mat-card>
+</div>

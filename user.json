@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "Administrator"
+    },
+    {
+      "username": "Manju ",
+      "password": "naveen",
+      "role": "Administrator",
+      "id": 2
+    },
+    {
+      "username": "Puttamma",
+      "password": "chinnagiri",
+      "role": "Administrator",
+      "id": 3
+    },
+    {
+      "username": "Mahesh",
+      "password": "suresh",
+      "role": "User",
+      "id": 4
+    },
+    {
+      "username": "Umesh",
+      "password": "ramesh",
+      "role": "User",
+      "id": 5
+    },
+    {
+      "username": "Chiranth",
+      "password": "Thejus",
+      "role": "Administrator",
+      "id": 6
+    },
+    {
+      "username": "nethra",
+      "password": "sunitha",
+      "role": "Admin",
+      "id": 7
+    },
+    {
+      "username": "Manjunath",
+      "password": "yashash",
+      "role": "Administrator",
+      "id": 8
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

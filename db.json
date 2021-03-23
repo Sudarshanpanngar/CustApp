@@ -1,0 +1,95 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "Employees": [
+    {
+      "id": 1,
+      "EmployeeID": 1,
+      "EmployeeName": "Chinnagiriyappa",
+      "Department": "Fiance",
+      "Email": "chinnagiri@gmail.com",
+      "DOJ": "04-Apr-1949"
+    },
+    {
+      "EmployeeID": 2,
+      "EmployeeName": "Puttamma",
+      "Department": "IT",
+      "Email": "puttamma@gmail.com",
+      "DOJ": "01-Jan-1965",
+      "id": 2
+    },
+    {
+      "EmployeeID": 3,
+      "EmployeeName": "Sudarshan Channagiri",
+      "Department": "I T",
+      "Email": "sudhi_hc@yahoo.co.in",
+      "DOJ": "02-Nov-2009",
+      "id": 3
+    },
+    {
+      "EmployeeID": 4,
+      "EmployeeName": "Nethra Ravikeerthi",
+      "Department": "Fashion ",
+      "Email": "nethrar4@gmail.com",
+      "DOJ": "15-05-2015",
+      "id": 4
+    }
+  ],
+  "Departments": [
+    {
+      "id": 1,
+      "DepartmentID": 1,
+      "DepartmentName": "InfoTech"
+    },
+    {
+      "id": 2,
+      "DepartmentID": 2,
+      "DepartmentName": "Sales"
+    },
+    {
+      "id": 3,
+      "DepartmentID": 3,
+      "DepartmentName": "Finance"
+    },
+    {
+      "DepartmentID": 4,
+      "DepartmentName": "Human Resource",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "DepartmentID": 5,
+      "DepartmentName": "Support"
+    },
+    {
+      "DepartmentID": 6,
+      "DepartmentName": "Implementation and Maintainence",
+      "id": 6
+    },
+    {
+      "DepartmentID": 11,
+      "DepartmentName": "Mathematics",
+      "id": 9
+    },
+    {
+      "DepartmentID": 10,
+      "DepartmentName": "Science and Technology",
+      "id": 10
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

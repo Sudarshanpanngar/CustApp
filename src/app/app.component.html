@@ -1,0 +1,43 @@
+<div class="container">
+  <h2 class="d-flex justify-content-center text-white">New Angular Employee Demo App</h2>
+  <h3 class="d-flex justify-content-center text-white">Customer mannagement Portal</h3>
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+    <span class="navbar-toggler-icon"></span>
+    <div class="parentul">
+    <ul class="navbar-nav">
+        <li class="navbar-item br-light">
+
+        <button class="m-1 btn btn-light btn-outline-primary" Button label="DeptScreen"><a routerLink='Departments'routerLinkActive="active" >
+            Departments
+          </a>
+        </button>
+      </li>
+      <li class="navbar-item">
+        <button class="m-1 btn btn-light btn-outline-primary" Button label="EmpScreen"><a routerLink='Employees' routerLinkActive="active">
+            Employees
+          </a>
+        </button>
+      </li>
+    </ul>
+    <ul class="rightSide ">
+      <li class="navbar-item">
+        <button class="m-1 btn btn-light btn-outline-success float-xs-right" Button label="RegScreen" style="float:right">
+          <a routerLink='Register' routerLinkActive="active">
+            Register
+          </a>
+        </button>
+      </li>
+      <li class="navbar-item">
+        <button class="m-1 btn btn-light btn-outline-success float-xs-right" Button label="Login" style="float:right"><a
+            routerLink='login'>
+            Login
+          </a>
+        </button>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  <div>
+  <router-outlet></router-outlet>
+</div>
+</div>

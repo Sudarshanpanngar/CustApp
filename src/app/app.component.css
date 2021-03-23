@@ -1,0 +1,20 @@
+ul li {
+    list-style: none;
+}
+
+ ul li :hover {
+     color: navajowhite;
+     font-weight: bolder;
+     appearance:initial ;
+ }
+
+.rightSide {
+    display: flex;
+    justify-content: space-between;
+  
+}
+.parentul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
